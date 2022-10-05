@@ -75,6 +75,7 @@
   justify-content: space-around;
   align-items: center;
   color: #ffffffa5;
+  padding: 0 10px;
 }
 
 .day_details {
@@ -83,6 +84,10 @@
 
 .day_name {
   font-size: 1.7rem;
+}
+
+.dayName{
+  font-size: 1.5rem;
 }
 
 .day_details i {
@@ -112,7 +117,7 @@
 }
 
 .kph_titel {
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: absolute;
   top: -10px;
   left: 10px;
@@ -122,12 +127,12 @@
   font-size: 1rem;
   position: absolute;
   top: 70px;
-  left: 10px;
+  left: 15px;
 }
 
 .kpm img {
   height: 70px;
-  margin: 15px 0;
+  margin: 25px 0 15px 0;
 }
 
 .swiper{
@@ -182,6 +187,11 @@
   transition: 0.2s ease;
 }
 
+button{
+  border: none;
+  outline: none;
+}
+
 .search_button i:hover{
   color: rgb(255, 255, 255);
   background-color: #ff4800;
@@ -204,16 +214,22 @@
   width: 300px;
   padding: 10px;
   border: 2px solid green;
+  text-transform: capitalize;
   outline: none;
 }
 
+.form button{
+  background-color: transparent;
+}
 .form i{
-  padding: 10px 10px;
+  padding: 11px 10px;
   color: #000000;
   background-color: #FFFFFF;
   border: 2px solid green;
   cursor: pointer;
+  margin-left: -8px;
 }
+
 
 
 .form i:hover{
@@ -222,7 +238,19 @@
   
 }
 
+.region{
+  font-size: 1.5rem;
+  text-align: center;
+}
 
+@media screen and (max-width: 400px){
+  .weather_app{
+    width: 350px;
+    margin: 0 auto;
+  }
 
-
+  .form input{
+    width: 70%;
+  }
+}
 
